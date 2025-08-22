@@ -1,0 +1,346 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.portfolio-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #555;
+    outline: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    padding: 40px 20px;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 2 1 300px;
+    min-width: 280px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #a0d468;
+}
+
+.hero-content p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.hero-image {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+/* About Me Section */
+.about-me {
+    display: flex;
+    padding: 40px 20px;
+    gap: 20px;
+    background-color: #444;
+    flex-wrap: wrap;
+}
+
+.about-me-image {
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.about-me-image img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.about-me-content {
+    flex: 2 1 300px;
+    min-width: 280px;
+}
+
+.about-me-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-me-content p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Our Services Section */
+.our-services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.service-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Contact Me Section */
+.contact-me {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #222;
+}
+
+.contact-me h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-me input,
+.contact-me textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.contact-me textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-me input::placeholder,
+.contact-me textarea::placeholder {
+    color: #ccc;
+    font-style: italic;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a0d468;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #7cb342;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Accessibility: Focus outline */
+nav ul li a:focus,
+.button:focus,
+.contact-me input:focus,
+.contact-me textarea:focus {
+    outline: 2px solid #a0d468;
+    outline-offset: 2px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .about-me-content h2,
+    .our-services h2,
+    .contact-me h2 {
+        font-size: 1.8em;
+    }
+
+    .service-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hero, .about-me {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+
+    .services-container {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .contact-me form {
+        width: 90%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2em;
+    }
+
+    .hero-content h3 {
+        font-size: 1em;
+    }
+
+    .about-me-content h2,
+    .our-services h2,
+    .contact-me h2 {
+        font-size: 1.5em;
+    }
+
+    .service-card h3 {
+        font-size: 1.2em;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .contact-me input,
+    .contact-me textarea {
+        font-size: 0.9em;
+    }
+}
